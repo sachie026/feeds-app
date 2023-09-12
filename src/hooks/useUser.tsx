@@ -7,7 +7,7 @@ export interface User {
 }
 
 const userData = {
-  firstname: "Alex",
+  firstname: "Jane",
   lastname: "Potter",
 };
 

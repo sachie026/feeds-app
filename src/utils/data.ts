@@ -9,6 +9,7 @@ export interface Post {
   feeling: number;
   message: string;
   commentsCount: number;
+  isEdited?: boolean;
 }
 export const posts: Post[] = [
   {
@@ -22,6 +23,7 @@ export const posts: Post[] = [
     message:
       "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
     commentsCount: 24,
+    isEdited: true,
   },
   {
     id: 2,
