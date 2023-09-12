@@ -6,9 +6,10 @@ interface Props {
   label: string;
   placeholder: string;
   forgotPw?: boolean;
+  value?: string;
 }
 
-function InputPassword({ label, placeholder, forgotPw }: Props) {
+function InputPassword({ label, placeholder, forgotPw, value }: Props) {
   return (
     <div className="flex flex-col w-full mb-4">
       <div className="flex">
@@ -25,7 +26,8 @@ function InputPassword({ label, placeholder, forgotPw }: Props) {
         <input
           type="password"
           placeholder={placeholder}
-          className="bg-dark-gray border border-mid-gray rounded-md py-2 px-4 text-white"
+          value={value}
+          className="bg-dark-gray border border-border rounded-md py-2 px-4 text-white"
         />
         <Eye classes="absolute right-2 stroke-border" />
       </div>

@@ -1,13 +1,21 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
 import LoginForm from "../components/login-form";
 import Logo from "../assets/icons/logo";
 
 function Login() {
+  const navigate = useNavigate();
+
+  const onLogin = () => {
+    navigate("/feeds");
+  };
+
   return (
     <div className="flex justify-center items-center h-full">
-      <div className="flex flex-col w-1/3 h-2/4 items-center ">
+      <div className="flex flex-col w-1/3 min-h-2/4 items-center ">
         <Logo classes="mb-8" />
-        <LoginForm />
+        <LoginForm onSubmitHandler={onLogin} />
       </div>
     </div>
   );

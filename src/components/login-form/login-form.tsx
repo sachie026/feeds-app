@@ -18,16 +18,20 @@ import {
   NOT_REGISTERED,
 } from "../../utils/labels";
 
-function LoginForm() {
+interface Props {
+  onSubmitHandler: () => void;
+}
+
+function LoginForm({ onSubmitHandler }: Props) {
   return (
-    <div className="flex bg-dark-gray h-full w-full border rounded-md border-mid-gray">
-      <form className="flex flex-col w-full p-8">
+    <div className="flex bg-dark-gray h-full w-full border-2 rounded-md border-mid-gray">
+      <form className="flex flex-col w-full p-8" onSubmit={onSubmitHandler}>
         <CardHeader header={LOGIN_HEADER} subHeader={WELCOME} />
 
         <InputText label={EMAIL_LABEL} placeholder={EMAIL_PLACEHOLDER} />
         <InputPassword label={PW_LABEL} placeholder={PW_PLACEHOLDER} forgotPw />
 
-        <InputButton label={LOGIN_NOW} />
+        <InputButton label={LOGIN_NOW} onSubmitHandler={onSubmitHandler} />
         <CardFooter
           header={REGISTER}
           subHeader={NOT_REGISTERED}
