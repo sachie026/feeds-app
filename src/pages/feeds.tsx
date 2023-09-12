@@ -30,7 +30,7 @@ function Feeds() {
   }, []);
 
   return (
-    <div className="flex flex-col h-full w-2/4 py-16 text-mid-gray">
+    <div className="flex flex-col h-full w-3/4 lg:w-2/4 py-16 text-mid-gray">
       <FeedsHeader userName={user.firstname} subHeader={FEEDS_SUBHEADER} />
 
       <div onClick={viewModal}>
