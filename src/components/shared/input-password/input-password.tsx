@@ -1,6 +1,6 @@
 import React from "react";
-import { FORGOT_PW } from "../../utils/labels";
-import Eye from "../../assets/icons/eye";
+import { FORGOT_PW } from "../../../utils/labels";
+import Eye from "../../../assets/icons/eye";
 
 interface Props {
   label: string;

@@ -1,3 +1,5 @@
+export const reactions = [`👋`, `😞`, `💬`];
+
 export interface Post {
   id: number;
   firstName: string;
@@ -15,10 +17,10 @@ export const posts: Post[] = [
     lastName: "Webb",
     createdAt: "2023-09-12T09:22:31.571Z",
     profilePic:
-      "https://www.elfutbolero.us/__export/1626407849612/sites/elfutboleromx/img/2021/07/15/befunky-collage_-_2021-07-15t225614_239.jpg_1169307048.jpg",
-    feeling: 1,
+      "https://media.gq.com/photos/56e853e7161e63486d04d6c8/1:1/w_1600,h_1600,c_limit/david-beckham-gq-0416-2.jpg",
+    feeling: 0,
     message:
-      "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+      "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
     commentsCount: 24,
   },
   {
@@ -27,10 +29,10 @@ export const posts: Post[] = [
     lastName: "McKinney",
     createdAt: "2023-09-12T08:22:31.571Z",
     profilePic:
-      "https://www.elfutbolero.us/__export/1626407849612/sites/elfutboleromx/img/2021/07/15/befunky-collage_-_2021-07-15t225614_239.jpg_1169307048.jpg",
-    feeling: 2,
+      "https://media.gq.com/photos/56e853e7161e63486d04d6c8/1:1/w_1600,h_1600,c_limit/david-beckham-gq-0416-2.jpg",
+    feeling: 1,
     message:
       "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-    commentsCount: 24,
+    commentsCount: 0,
   },
 ];

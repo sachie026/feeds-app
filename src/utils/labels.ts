@@ -26,3 +26,4 @@ export const FEEDS_SUBHEADER =
 export const CREATE_POST = "Create post";
 export const POST_PLACEHOLDER = "How are you feeling today?";
 export const POST = "Post";
+export const COMMENTS = "comments";

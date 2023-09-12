@@ -1,10 +1,10 @@
 import React from "react";
 
-import InputText from "../input-text";
-import InputPassword from "../input-password";
-import CardHeader from "../card-header/card-header";
-import InputButton from "../input-button";
-import CardFooter from "../card-footer";
+import InputText from "../shared/input-text";
+import InputPassword from "../shared/input-password";
+import CardHeader from "../shared/card-header";
+import InputButton from "../shared/input-button";
+import CardFooter from "../shared/card-footer";
 
 import {
   PW_LABEL,

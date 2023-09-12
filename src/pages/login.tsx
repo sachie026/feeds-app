@@ -12,7 +12,7 @@ function Login() {
   };
 
   return (
-    <div className="flex justify-center items-center h-full">
+    <div className="flex justify-center w-full items-center min-h-full">
       <div className="flex flex-col w-1/3 min-h-2/4 items-center ">
         <Logo classes="mb-8" />
         <LoginForm onSubmitHandler={onLogin} />
