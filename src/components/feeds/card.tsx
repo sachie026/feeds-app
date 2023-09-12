@@ -23,7 +23,7 @@ function FeedCard({ post }: Props) {
   } = post;
 
   return (
-    <div className="flex flex-col bg-dark-gray min-h-fit w-full border-2 rounded-md border-border p-8 mt-4">
+    <div className="flex flex-col bg-dark-gray min-h-fit w-full border-2 rounded-md border-border p-8 mt-4 cursor-pointer">
       <FeedCardHeader
         profilePic={profilePic}
         firstName={firstName}
@@ -43,4 +43,4 @@ function FeedCard({ post }: Props) {
   );
 }
 
-export default FeedCard;
+export default React.memo(FeedCard);

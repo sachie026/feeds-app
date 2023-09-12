@@ -17,4 +17,4 @@ function CardFooter({ header, subHeader, onClick }: Props) {
   );
 }
 
-export default CardFooter;
+export default React.memo(CardFooter);

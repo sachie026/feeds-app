@@ -22,4 +22,4 @@ function InputText({ label, placeholder, value }: Props) {
   );
 }
 
-export default InputText;
+export default React.memo(InputText);

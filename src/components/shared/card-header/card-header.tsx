@@ -16,4 +16,4 @@ function CardHeader({ header, subHeader }: Props) {
   );
 }
 
-export default CardHeader;
+export default React.memo(CardHeader);

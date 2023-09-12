@@ -35,4 +35,4 @@ function InputPassword({ label, placeholder, forgotPw, value }: Props) {
   );
 }
 
-export default InputPassword;
+export default React.memo(InputPassword);

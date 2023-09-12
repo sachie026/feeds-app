@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback } from "react";
 
 import InputText from "../shared/input-text";
 import InputPassword from "../shared/input-password";
@@ -20,9 +20,14 @@ import {
 
 interface Props {
   onSubmitHandler: () => void;
+  updateIndex?: (index: number) => void;
 }
 
-function LoginForm({ onSubmitHandler }: Props) {
+function LoginForm({ onSubmitHandler, updateIndex }: Props) {
+  const onRegisterClick = useCallback(() => {
+    updateIndex && updateIndex(1);
+  }, [updateIndex]);
+
   return (
     <div className="flex bg-dark-gray h-full w-full border-2 rounded-md border-mid-gray">
       <form className="flex flex-col w-full p-8" onSubmit={onSubmitHandler}>
@@ -35,7 +40,7 @@ function LoginForm({ onSubmitHandler }: Props) {
         <CardFooter
           header={REGISTER}
           subHeader={NOT_REGISTERED}
-          onClick={() => {}}
+          onClick={onRegisterClick}
         />
       </form>
     </div>

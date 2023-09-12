@@ -18,4 +18,4 @@ function InputButton({ label, classes }: Props) {
   );
 }
 
-export default InputButton;
+export default React.memo(InputButton);
