@@ -1,15 +1,34 @@
 import React from "react";
+import { FORGOT_PW } from "../../utils/labels";
+import Eye from "../../assets/icons/eye";
 
 interface Props {
   label: string;
   placeholder: string;
+  forgotPw?: boolean;
 }
 
-function InputPassword({ label, placeholder }: Props) {
+function InputPassword({ label, placeholder, forgotPw }: Props) {
   return (
-    <div className="flex flex-col">
-      <label className="text-mid-gray text-sm mb-1">{label}</label>
-      <input type="password" placeholder={placeholder} />
+    <div className="flex flex-col w-full mb-4">
+      <div className="flex">
+        <label className="text-mid-gray text-sm mb-1 flex-1 text-light-white">
+          {label}
+        </label>
+        {forgotPw && (
+          <label className="text-mid-gray text-sm mb-1 text-light-white">
+            {FORGOT_PW}
+          </label>
+        )}
+      </div>
+      <div className="w-full flex flex-col relative justify-center">
+        <input
+          type="password"
+          placeholder={placeholder}
+          className="bg-dark-gray border border-mid-gray rounded-md py-2 px-4 text-white"
+        />
+        <Eye classes="absolute right-2 stroke-border" />
+      </div>
     </div>
   );
 }
