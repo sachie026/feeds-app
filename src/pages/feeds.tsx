@@ -12,7 +12,9 @@ import SignupForm from "../components/signup-form";
 import LoginForm from "../components/login-form";
 
 function Feeds() {
-  const { user } = useUser();
+  const {
+    user: { firstname },
+  } = useUser();
   const [showModal, setShowModal] = useState(false);
   const [modalIndex, setModalIndex] = useState(1);
 
@@ -31,7 +33,7 @@ function Feeds() {
 
   return (
     <div className="flex flex-col h-full w-3/4 lg:w-2/4 py-16 text-mid-gray">
-      <FeedsHeader userName={user.firstname} subHeader={FEEDS_SUBHEADER} />
+      <FeedsHeader userName={firstname} subHeader={FEEDS_SUBHEADER} />
 
       <div onClick={viewModal}>
         <CreatePost />

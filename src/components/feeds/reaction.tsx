@@ -1,14 +1,13 @@
 import React from "react";
-import { reactions } from "../../utils/data";
 
 interface Props {
-  index: number;
+  reaction: string;
 }
 
-function Reaction({ index }: Props) {
+function Reaction({ reaction }: Props) {
   return (
     <div className="p-2 w-12 h-12 flex items-center justify-center bg-dark-gray rounded-full">
-      <label className="text-lg">{reactions[index]}</label>
+      <label className="text-lg">{reaction}</label>
     </div>
   );
 }

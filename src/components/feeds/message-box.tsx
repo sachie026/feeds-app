@@ -3,19 +3,19 @@ import { POST_PLACEHOLDER } from "../../utils/labels";
 import Reaction from "./reaction";
 
 interface Props {
-  reactionIndex: number;
+  reaction: string;
   msg?: string;
   readonly?: boolean;
 }
 
-function MessageBox({ msg, readonly, reactionIndex }: Props) {
+function MessageBox({ msg, readonly, reaction }: Props) {
   return (
     <div
       className={`flex bg-dark-black w-full p-4 rounded-md ${
         readonly ? "" : "items-center"
       }`}
     >
-      <Reaction index={reactionIndex} />
+      <Reaction reaction={reaction} />
       {readonly ? (
         <label className="flex-1 ml-4 text-md">{msg}</label>
       ) : (

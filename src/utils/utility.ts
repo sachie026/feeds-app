@@ -1,4 +1,6 @@
-export function getTimeDiff(oldDate: string) {
+import { AGO, DAYS, HOURS, MINS } from "./labels";
+
+export function getTimeDiff(oldDate: string): string {
   let createdAt = new Date(oldDate);
   let currentTime = new Date();
 
@@ -8,12 +10,12 @@ export function getTimeDiff(oldDate: string) {
   let diffMins = Math.round(((diffMs % 86400000) % 3600000) / 60000); // minutes
 
   if (diffDays) {
-    return `${diffDays} days ago`;
+    return `${diffDays} ${DAYS} ${AGO}`;
   }
 
   if (diffHrs) {
-    return `${diffHrs} hours ago`;
+    return `${diffHrs} ${HOURS} ${AGO}`;
   }
 
-  return `${diffMins} mins ago`;
+  return `${diffMins} ${MINS} ${AGO}`;
 }

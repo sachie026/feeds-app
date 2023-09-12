@@ -16,6 +16,8 @@ Tech stack:
 - Typescript
 - Tailwind
 
+Also, added separate labels folder to help in localization implementation in future.
+
 ## Available Scripts
 
 In the project directory, you can run:

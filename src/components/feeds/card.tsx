@@ -31,7 +31,7 @@ function FeedCard({ post }: Props) {
         createdAt={createdAt}
       />
 
-      <MessageBox reactionIndex={feeling} msg={message} readonly />
+      <MessageBox reaction={feeling} msg={message} readonly />
 
       {!!commentsCount && (
         <div className="flex items-center mt-4">
