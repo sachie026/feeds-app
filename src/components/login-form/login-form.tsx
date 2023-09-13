@@ -29,7 +29,7 @@ function LoginForm({ onSubmitHandler, updateIndex }: Props) {
   }, [updateIndex]);
 
   return (
-    <div className="flex bg-dark-gray h-full w-full border-2 rounded-md border-mid-gray">
+    <div className="flex bg-dark-gray h-full w-full border rounded-md border-mid-gray">
       <form className="flex flex-col w-full p-8" onSubmit={onSubmitHandler}>
         <CardHeader header={LOGIN_HEADER} subHeader={WELCOME} />
 
